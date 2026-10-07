@@ -1,0 +1,576 @@
+﻿<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ministère Les Régénérés | Nouvelles créatures en domination — Lomé, Togo</title>
+  <meta name="description" content="Ministère Les Régénérés à Lomé (Togo) : horaires des cultes, programmes hebdomadaires, séminaires, replays vidéo et soutien par Mobile Money (T-Money & Flooz). Régénérés : Nouvelles créatures en domination." />
+  <meta name="theme-color" content="#051D42" />
+  <meta name="author" content="Ministère Les Régénérés" />
+  <meta name="keywords" content="Ministère Les Régénérés, église Lomé, Togo, culte, séminaire, T-Money, Flooz, louange, adoration" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Ministère Les Régénérés — Nouvelles créatures en domination" />
+  <meta property="og:description" content="Rejoignez-nous à Lomé pour les cultes du mercredi et du dimanche. Suivez nos programmes, séminaires et replays." />
+  <meta property="og:image" content="assets/hero-poster.jpg" />
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/logo-256.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css?v=muy1p0k0" />
+
+  <!-- Données structurées (SEO). Les liens « sameAs » sont aussi
+       synchronisés automatiquement depuis js/config.js → links. -->
+  <script type="application/ld+json" id="schema-church">
+  {
+    "@context": "https://schema.org",
+    "@type": "Church",
+    "name": "Ministère Les Régénérés",
+    "slogan": "Nouvelles créatures en domination",
+    "image": "assets/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hédrzanawové mangotigomé, en face de Energy Generation",
+      "addressLocality": "Lomé",
+      "addressCountry": "TG"
+    },
+    "telephone": ["+228 93 35 75 15", "+228 98 15 10 68"],
+    "sameAs": [
+      "https://www.facebook.com/ministeleresregeneres",
+      "https://www.youtube.com/@ministeleresregeneres",
+      "https://www.tiktok.com/@ministeleresregeneres",
+      "https://www.instagram.com/ministeleresregeneres"
+    ]
+  }
+  </script>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+
+<body class="bg-white">
+  <!-- ============================================================
+       ✏️  GUIDE RAPIDE DE PERSONNALISATION
+       ------------------------------------------------------------
+       • Liens réseaux sociaux & WhatsApp  →  js/config.js  (section links)
+       • Clé API YouTube + chaîne          →  js/config.js  (section youtube)
+       • Horaires / événements             →  js/config.js  (section events)
+
+       Les liens portant l'attribut data-link="…" (facebook, youtube,
+       tiktok, instagram, whatsapp) sont mis à jour AUTOMATIQUEMENT
+       au chargement depuis js/config.js : pas besoin de les modifier ici.
+       ============================================================ -->
+
+  <!-- ============ HEADER ============ -->
+  <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+    <div class="container-x flex items-center justify-between gap-4 py-3">
+      <!-- Brand -->
+      <a href="#accueil" class="flex items-center gap-3">
+        <img src="assets/logo-256.png" alt="Logo Ministère Les Régénérés" class="h-12 w-12 rounded-full ring-2 ring-gold/70 sm:h-14 sm:w-14" width="56" height="56" />
+        <span class="leading-tight">
+          <span class="block text-base font-extrabold tracking-wide text-white sm:text-lg">LES RÉGÉNÉRÉS</span>
+          <span class="block text-[10px] font-medium uppercase tracking-[0.16em] text-gold sm:text-[11px]">Nouvelles créatures en domination</span>
+        </span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden items-center gap-7 lg:flex" aria-label="Navigation principale">
+        <a href="#accueil" class="nav-link">Accueil</a>
+        <a href="#direct" class="nav-link">Direct<span data-nav-live class="ml-1.5 hidden h-2 w-2 rounded-full bg-brandred animate-live-pulse align-middle inline-block" aria-hidden="true"></span></a>
+        <a href="#programmes" class="nav-link">Programmes</a>
+        <a href="#evenements" class="nav-link">Événements</a>
+        <a href="#videos" class="nav-link">Vidéos</a>
+        <a href="#dons" class="nav-link">Dons</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a data-link="whatsapp" href="https://wa.me/22893357515" target="_blank" rel="noopener" class="btn-whatsapp hidden px-5 py-2.5 sm:inline-flex">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp
+        </a>
+        <!-- Mobile menu button -->
+        <button id="menu-toggle" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/25 text-white lg:hidden" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="icon-open" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg id="icon-close" class="hidden h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden border-t border-white/10 bg-navy/95 backdrop-blur lg:hidden">
+      <nav class="container-x flex flex-col py-4" aria-label="Navigation mobile">
+        <a href="#accueil" class="border-b border-white/10 py-3 font-semibold text-white/90">Accueil</a>
+        <a href="#direct" class="border-b border-white/10 py-3 font-semibold text-white/90">Direct<span data-nav-live class="ml-1.5 hidden h-2 w-2 rounded-full bg-brandred animate-live-pulse align-middle inline-block" aria-hidden="true"></span></a>
+        <a href="#programmes" class="border-b border-white/10 py-3 font-semibold text-white/90">Programmes</a>
+        <a href="#evenements" class="border-b border-white/10 py-3 font-semibold text-white/90">Événements</a>
+        <a href="#videos" class="border-b border-white/10 py-3 font-semibold text-white/90">Vidéos</a>
+        <a href="#dons" class="border-b border-white/10 py-3 font-semibold text-white/90">Dons</a>
+        <a href="#contact" class="py-3 font-semibold text-white/90">Contact</a>
+        <a data-link="whatsapp" href="https://wa.me/22893357515" target="_blank" rel="noopener" class="btn-whatsapp mt-3 w-full">Contacter sur WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="accueil" class="relative flex min-h-[100svh] items-center overflow-hidden bg-navy">
+      <!-- Background video -->
+      <video class="absolute inset-0 h-full w-full object-cover" autoplay loop muted playsinline poster="assets/hero-poster.jpg" aria-hidden="true">
+        <source src="assets/video/hero.webm" type="video/webm" />
+        <source src="assets/video/hero.mp4" type="video/mp4" />
+      </video>
+      <!-- Overlays -->
+      <div class="absolute inset-0 bg-gradient-to-b from-navy/85 via-navy/75 to-royal-900/95"></div>
+      <div class="absolute inset-0 bg-grid opacity-30"></div>
+      <div class="absolute -left-24 top-1/3 h-72 w-72 rounded-full bg-gold/20 blur-3xl"></div>
+      <div class="absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-royal-400/25 blur-3xl"></div>
+
+      <div class="container-x relative z-10 pt-28 pb-20 text-center">
+        <span class="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold backdrop-blur">
+          <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+          Lomé, Togo
+        </span>
+
+        <h1 class="mx-auto mt-6 max-w-4xl text-4xl font-black leading-[1.05] text-white text-shadow-hero sm:text-5xl md:text-6xl lg:text-7xl">
+          Ministère <span class="text-gold">Les Régénérés</span>
+        </h1>
+        <p class="mx-auto mt-5 max-w-2xl text-lg font-medium text-white/90 sm:text-xl md:text-2xl">
+          « Régénérés : Nouvelles créatures en domination »
+        </p>
+        <p class="mx-auto mt-3 max-w-2xl text-sm italic text-white/70 sm:text-base">
+          « Vous avez été régénérés, non par une semence corruptible, mais par une semence incorruptible, par la parole vivante et permanente de Dieu. » — 1 Pierre 1:23
+        </p>
+
+        <!-- Countdown -->
+        <div class="mx-auto mt-10 max-w-3xl">
+          <div class="mb-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <span id="live-badge" class="hidden items-center gap-2 rounded-full bg-brandred px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white shadow-lg">
+              <span class="inline-block h-2.5 w-2.5 rounded-full bg-white animate-live-pulse"></span> En direct
+            </span>
+            <p id="countdown-label" class="text-sm font-semibold uppercase tracking-[0.16em] text-gold sm:text-base">
+              Prochain programme
+            </p>
+          </div>
+          <div class="grid grid-cols-4 gap-2.5 sm:gap-4" role="timer" aria-live="polite" aria-atomic="true">
+            <div class="count-box"><span id="cd-days" class="count-num">00</span><span class="count-lbl">Jours</span></div>
+            <div class="count-box"><span id="cd-hours" class="count-num">00</span><span class="count-lbl">Heures</span></div>
+            <div class="count-box"><span id="cd-mins" class="count-num">00</span><span class="count-lbl">Minutes</span></div>
+            <div class="count-box"><span id="cd-secs" class="count-num">00</span><span class="count-lbl">Secondes</span></div>
+          </div>
+          <p id="countdown-sub" class="mt-4 text-sm text-white/75">Chargement du prochain culte…</p>
+        </div>
+
+        <div class="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <a href="#programmes" class="btn-gold w-full sm:w-auto">
+            Voir les programmes
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a data-link="whatsapp" href="https://wa.me/22893357515" target="_blank" rel="noopener" class="btn-outline w-full sm:w-auto">Rejoindre sur WhatsApp</a>
+        </div>
+      </div>
+
+      <a href="#programmes" class="absolute bottom-6 left-1/2 z-10 hidden -translate-x-1/2 text-white/70 md:block" aria-label="Défiler vers les programmes">
+        <svg class="h-8 w-8 animate-bounce-down" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ ZONE DE VISIONNAGE / DIRECT ============ -->
+    <section id="direct" class="relative overflow-hidden bg-gradient-to-b from-royal-900 to-navy py-20 sm:py-24">
+      <div class="absolute -left-24 top-1/4 h-80 w-80 rounded-full bg-royal-500/25 blur-3xl"></div>
+      <div class="absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-gold/10 blur-3xl"></div>
+
+      <div class="container-x relative z-10">
+        <div class="mx-auto max-w-2xl text-center reveal">
+          <span class="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-gold">
+            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 10.5V7a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h12a1 1 0 001-1v-3.5l4 3.5V7l-4 3.5z"/></svg>
+            Zone de visionnage
+          </span>
+          <h2 class="mt-5 text-3xl font-extrabold leading-tight text-white sm:text-4xl md:text-[2.6rem]">Le culte en direct</h2>
+          <p class="mt-4 text-base text-white/70 sm:text-lg">
+            Suivez nos cultes en direct sur YouTube, où que vous soyez — à Lomé comme dans la diaspora. Le direct s'affiche automatiquement dès que nous sommes en ligne.
+          </p>
+        </div>
+
+        <!-- Barre de statut -->
+        <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row reveal">
+          <span id="live-status" class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-widest text-white sm:text-sm">
+            <span class="inline-block h-2.5 w-2.5 rounded-full bg-slate-400"></span>
+            <span id="live-status-text">Vérification du direct…</span>
+          </span>
+          <span id="live-schedule" class="text-sm text-white/60"></span>
+        </div>
+
+        <!-- Lecteur + chat -->
+        <div class="mt-8 grid gap-6 lg:grid-cols-3 reveal">
+          <div class="lg:col-span-2">
+            <div class="relative aspect-video overflow-hidden rounded-3xl border border-white/10 bg-black shadow-2xl">
+              <!-- Placeholder (hors ligne) -->
+              <div id="player-placeholder" class="absolute inset-0">
+                <img src="assets/hero-poster.jpg" alt="" class="h-full w-full object-cover opacity-50" loading="lazy" />
+                <div class="absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/60 to-navy/40"></div>
+                <div class="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+                  <span class="flex h-16 w-16 items-center justify-center rounded-full bg-white/15 backdrop-blur">
+                    <svg class="h-7 w-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  </span>
+                  <p id="placeholder-title" class="mt-4 text-lg font-bold text-white">Aucun direct pour le moment</p>
+                  <p id="placeholder-sub" class="mt-1 max-w-sm text-sm text-white/70">Le prochain culte sera diffusé ici en direct.</p>
+                </div>
+              </div>
+              <!-- Lecteur YouTube (injecté) -->
+              <div id="player-frame" class="absolute inset-0 hidden"></div>
+            </div>
+
+            <div class="mt-4 flex flex-col gap-3 sm:flex-row">
+              <a id="live-watch-btn" href="https://www.youtube.com/@ministeleresregeneres/live" target="_blank" rel="noopener" class="btn-gold w-full sm:w-auto">
+                <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+                Ouvrir sur YouTube
+              </a>
+              <a id="live-sub-btn" href="https://www.youtube.com/@ministeleresregeneres?sub_confirmation=1" target="_blank" rel="noopener" class="btn-outline w-full sm:w-auto">S'abonner à la chaîne</a>
+            </div>
+          </div>
+
+          <!-- Chat en direct -->
+          <div id="chat-panel" class="hidden overflow-hidden rounded-3xl border border-white/10 bg-white/5">
+            <div class="flex items-center gap-2 border-b border-white/10 px-4 py-3">
+              <span class="inline-block h-2.5 w-2.5 rounded-full bg-brandred animate-live-pulse"></span>
+              <span class="text-sm font-bold text-white">Chat en direct</span>
+            </div>
+            <div class="h-[420px] lg:h-[calc(100%-49px)]">
+              <iframe id="chat-frame" class="h-full w-full" title="Chat YouTube en direct" allow="autoplay; encrypted-media"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dernières vidéos -->
+        <div id="replays" class="mt-14 hidden">
+          <h3 class="text-center text-xl font-extrabold text-white sm:text-2xl">Dernières vidéos</h3>
+          <div id="replays-grid" class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAMMES ============ -->
+    <section id="programmes" class="relative bg-white py-20 sm:py-24">
+      <div class="container-x">
+        <div class="mx-auto max-w-2xl text-center reveal">
+          <span class="eyebrow">Programmes hebdomadaires</span>
+          <h2 class="section-heading">Nos rendez-vous de la semaine</h2>
+          <p class="mt-4 text-base text-slate-500 sm:text-lg">
+            Trois temps forts pour grandir dans la Parole, la prière et l'adoration. Nous vous accueillons avec joie à Lomé.
+          </p>
+        </div>
+
+        <div class="mt-14 grid gap-6 md:grid-cols-3">
+          <!-- Card 1 -->
+          <article class="card card-hover reveal">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-2 rounded-full bg-royal-50 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-royal">Mercredi</span>
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-royal text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2m0 14v2m9-9h-2M5 12H3m14.5-6.5L16 7M8 16l-1.5 1.5m11 0L16 16M8 8L6.5 6.5"/><circle cx="12" cy="12" r="3.2"/></svg>
+              </span>
+            </div>
+            <p class="mt-6 text-3xl font-extrabold text-navy">18h00 <span class="text-slate-300">–</span> 20h00</p>
+            <h3 class="mt-2 text-xl font-bold text-navy">Culte du Soir</h3>
+            <p class="mt-3 text-sm leading-relaxed text-slate-500">Enseignement, prière et édification spirituelle au cœur de la semaine.</p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card card-hover reveal">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-2 rounded-full bg-gold/15 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-gold-dark">Dimanche</span>
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold text-navy">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zm0 0V3m0 3.5L8.5 4M12 6.5L15.5 4"/></svg>
+              </span>
+            </div>
+            <p class="mt-6 text-3xl font-extrabold text-navy">07h00 <span class="text-slate-300">–</span> 08h00</p>
+            <h3 class="mt-2 text-xl font-bold text-navy">École du Dimanche</h3>
+            <p class="mt-3 text-sm leading-relaxed text-slate-500">Session d'étude biblique approfondie en petits groupes, pour tous les âges.</p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card card-hover reveal">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-2 rounded-full bg-brandred/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-brandred">Dimanche</span>
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brandred text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5L6 9H3v6h3l5 4V5zm5 2a5 5 0 010 10m2.5-13a9 9 0 010 16"/></svg>
+              </span>
+            </div>
+            <p class="mt-6 text-3xl font-extrabold text-navy">08h00 <span class="text-slate-300">–</span> 11h30</p>
+            <h3 class="mt-2 text-xl font-bold text-navy">Grand Culte</h3>
+            <p class="mt-3 text-sm leading-relaxed text-slate-500">Célébration dominicale : louange, adoration et prédication de la Parole.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ÉVÉNEMENT SPÉCIAL ============ -->
+    <section id="evenements" class="relative overflow-hidden bg-navy py-20 sm:py-24">
+      <div class="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-royal-500/30 blur-3xl"></div>
+      <div class="absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-gold/10 blur-3xl"></div>
+
+      <div class="container-x relative z-10">
+        <div class="mx-auto max-w-2xl text-center reveal">
+          <span class="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-gold">Événement spécial</span>
+          <h2 class="mt-5 text-3xl font-extrabold leading-tight text-white sm:text-4xl md:text-[2.6rem]">3 Jours de Séminaire</h2>
+          <p class="mt-4 text-base text-white/70 sm:text-lg">Un temps fort d'enseignement et de délivrance. Ne manquez pas ce rendez-vous !</p>
+        </div>
+
+        <div class="mt-14 grid items-stretch gap-8 lg:grid-cols-2">
+          <!-- Poster -->
+          <div class="reveal">
+            <div class="overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
+              <img src="assets/seminar.jpg" alt="Affiche du séminaire : 3 jours de séminaire, thème « Maudit est quiconque est pendu au bois »" class="h-full w-full object-cover" loading="lazy" width="1000" height="1000" />
+            </div>
+          </div>
+
+          <!-- Details -->
+          <div class="reveal flex flex-col justify-center rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur sm:p-10">
+            <div class="inline-flex w-fit items-center gap-2 rounded-full bg-brandred px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white">
+              <span class="inline-block h-2 w-2 rounded-full bg-white"></span> Thème
+            </div>
+            <p class="mt-5 text-2xl font-extrabold leading-snug text-gold sm:text-3xl">« Maudit est quiconque est pendu au bois »</p>
+            <p class="mt-2 text-sm font-semibold uppercase tracking-wider text-white/60">Galates 3:13</p>
+
+            <dl class="mt-8 space-y-5">
+              <div class="flex items-center gap-4">
+                <span class="h-14 w-14 flex-none overflow-hidden rounded-xl ring-2 ring-gold/60">
+                  <img src="assets/pastor.jpg" alt="Portrait de Pst. DEDJO Jérémie" class="h-full w-full object-cover object-[50%_18%]" loading="lazy" width="56" height="56" />
+                </span>
+                <div>
+                  <dt class="text-xs font-bold uppercase tracking-wider text-white/50">Orateur</dt>
+                  <dd class="text-lg font-bold text-white">Pst. DEDJO Jérémie</dd>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-gold text-navy">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3M3 11h18M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                </span>
+                <div>
+                  <dt class="text-xs font-bold uppercase tracking-wider text-white/50">Dates &amp; horaires</dt>
+                  <dd class="text-lg font-bold text-white">Du Mercredi 30 Septembre au Vendredi 02 Octobre 2026</dd>
+                  <dd class="text-sm text-white/70">Chaque soir de 18h30 à 20h30</dd>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="flex h-11 w-11 flex-none items-center justify-center rounded-xl bg-gold text-navy">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+                </span>
+                <div>
+                  <dt class="text-xs font-bold uppercase tracking-wider text-white/50">Lieu</dt>
+                  <dd class="text-lg font-bold text-white">Hédrzanawové mangotigomé</dd>
+                  <dd class="text-sm text-white/70">En face de Energy Generation, Lomé</dd>
+                </div>
+              </div>
+            </dl>
+
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a data-link="whatsapp" data-wa-text="Bonjour, je souhaite des informations sur le séminaire de 3 jours." href="https://wa.me/22893357515?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20le%20s%C3%A9minaire%20de%203%20jours." target="_blank" rel="noopener" class="btn-gold w-full sm:w-auto">S'inscrire / Informations</a>
+              <a href="#videos" class="btn-outline w-full sm:w-auto">Voir les replays</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MÉDIAS & VIDÉOS ============ -->
+    <section id="videos" class="bg-slate-50 py-20 sm:py-24">
+      <div class="container-x">
+        <div class="mx-auto max-w-2xl text-center reveal">
+          <span class="eyebrow">Médias &amp; activités en vidéo</span>
+          <h2 class="section-heading">Revivez nos cultes et moments forts</h2>
+          <p class="mt-4 text-base text-slate-500 sm:text-lg">Suivez nos directs sur Facebook et YouTube, et retrouvez les replays, clips et extraits sur nos réseaux sociaux.</p>
+        </div>
+
+        <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Facebook -->
+          <a data-link="facebook" href="https://www.facebook.com/ministeleresregeneres" target="_blank" rel="noopener" class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#1877F2] to-royal-700 p-8 text-white shadow-soft transition-all duration-300 hover:-translate-y-1.5 reveal">
+            <div class="absolute -right-6 -top-6 h-32 w-32 rounded-full bg-white/10"></div>
+            <div class="relative">
+              <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/15">
+                <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0022 12z"/></svg>
+              </span>
+              <h3 class="mt-6 text-2xl font-extrabold">Facebook Live &amp; Replays</h3>
+              <p class="mt-3 max-w-md text-sm text-white/85">Suivez nos cultes en direct et retrouvez toutes les rediffusions de nos enseignements.</p>
+              <span class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-gold">
+                Voir la page Facebook
+                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- YouTube -->
+          <a data-link="youtube" href="https://www.youtube.com/@ministeleresregeneres" target="_blank" rel="noopener" class="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#FF0000] to-[#8B0000] p-8 text-white shadow-soft transition-all duration-300 hover:-translate-y-1.5 reveal">
+            <div class="absolute -right-6 -top-6 h-32 w-32 rounded-full bg-white/10"></div>
+            <div class="relative">
+              <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/15">
+                <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+              </span>
+              <h3 class="mt-6 text-2xl font-extrabold">YouTube</h3>
+              <p class="mt-3 max-w-md text-sm text-white/85">Abonnez-vous à notre chaîne pour ne rien manquer de nos cultes, prédications et séminaires.</p>
+              <span class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-gold">
+                Voir la chaîne YouTube
+                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- TikTok -->
+          <a data-link="tiktok" href="https://www.tiktok.com/@ministeleresregeneres" target="_blank" rel="noopener" class="group relative overflow-hidden rounded-3xl bg-navy p-8 text-white shadow-soft transition-all duration-300 hover:-translate-y-1.5 reveal">
+            <div class="absolute -right-6 -top-6 h-32 w-32 rounded-full bg-gold/10"></div>
+            <div class="relative">
+              <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10">
+                <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 3c.3 2.1 1.6 3.6 3.7 3.9v2.5c-1.3.1-2.5-.3-3.7-1v6.4c0 3.5-2.4 5.9-5.8 5.9-3 0-5.2-2-5.2-4.9 0-2.8 2.1-4.9 5-4.9.3 0 .6 0 .9.1v2.7c-.3-.1-.6-.2-.9-.2-1.3 0-2.3 1-2.3 2.3 0 1.4 1 2.3 2.3 2.3 1.5 0 2.4-1 2.4-2.6V3h3.6z"/></svg>
+              </span>
+              <h3 class="mt-6 text-2xl font-extrabold">TikTok</h3>
+              <p class="mt-3 max-w-md text-sm text-white/85">Clips, extraits et messages courts pour vous édifier au quotidien : @ministèleresrégénérés.</p>
+              <span class="mt-6 inline-flex items-center gap-2 text-sm font-bold text-gold">
+                Voir le compte TikTok
+                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DÎMES & OFFRANDES ============ -->
+    <section id="dons" class="relative bg-white py-20 sm:py-24">
+      <div class="container-x">
+        <div class="mx-auto max-w-2xl text-center reveal">
+          <span class="eyebrow">Dîmes &amp; offrandes</span>
+          <h2 class="section-heading">Soutenir le ministère</h2>
+          <p class="mt-4 text-base text-slate-500 sm:text-lg">
+            Votre générosité fait avancer l'œuvre de Dieu. Soutenez le ministère facilement par Mobile Money (Togo).
+          </p>
+        </div>
+
+        <div class="mt-14 grid gap-6 md:grid-cols-2">
+          <!-- T-Money -->
+          <div class="card card-hover reveal">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-2 rounded-full bg-royal-50 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-royal">Togocom</span>
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-royal text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h4m-8 4h18a1 1 0 001-1V6a1 1 0 00-1-1H3a1 1 0 00-1 1v12a1 1 0 001 1z"/></svg>
+              </span>
+            </div>
+            <h3 class="mt-6 text-2xl font-extrabold text-navy">T-Money</h3>
+            <p class="mt-1 text-sm font-semibold uppercase tracking-wider text-slate-400">Numéro de compte</p>
+            <p id="num-tmoney" class="mt-2 text-2xl font-extrabold tracking-wide text-royal">+228 93 35 75 15</p>
+            <p class="mt-1 text-sm text-slate-500">Intitulé : Ministère Les Régénérés</p>
+            <button class="btn-navy mt-6 w-full copy-btn" data-copy="+22893357515" data-target="num-tmoney">
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V5a2 2 0 012-2h9a2 2 0 012 2v9a2 2 0 01-2 2h-2M5 9h9a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2v-9a2 2 0 012-2z"/></svg>
+              Copier le numéro
+            </button>
+          </div>
+
+          <!-- Flooz -->
+          <div class="card card-hover reveal">
+            <div class="flex items-center justify-between">
+              <span class="inline-flex items-center gap-2 rounded-full bg-gold/15 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-gold-dark">Moov Africa</span>
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold text-navy">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h4m-8 4h18a1 1 0 001-1V6a1 1 0 00-1-1H3a1 1 0 00-1 1v12a1 1 0 001 1z"/></svg>
+              </span>
+            </div>
+            <h3 class="mt-6 text-2xl font-extrabold text-navy">Flooz</h3>
+            <p class="mt-1 text-sm font-semibold uppercase tracking-wider text-slate-400">Numéro de compte</p>
+            <p id="num-flooz" class="mt-2 text-2xl font-extrabold tracking-wide text-gold-dark">+228 98 15 10 68</p>
+            <p class="mt-1 text-sm text-slate-500">Intitulé : Ministère Les Régénérés</p>
+            <button class="btn-navy mt-6 w-full copy-btn" data-copy="+22898151068" data-target="num-flooz">
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V5a2 2 0 012-2h9a2 2 0 012 2v9a2 2 0 01-2 2h-2M5 9h9a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2v-9a2 2 0 012-2z"/></svg>
+              Copier le numéro
+            </button>
+          </div>
+        </div>
+
+        <p class="mx-auto mt-8 max-w-xl text-center text-sm italic text-slate-400 reveal">
+          « Que chacun donne comme il l'a résolu en son cœur, car Dieu aime celui qui donne avec joie. » — 2 Corinthiens 9:7
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER / CONTACT ============ -->
+  <footer id="contact" class="relative overflow-hidden bg-navy pt-16 text-white/80">
+    <div class="absolute -top-24 right-0 h-72 w-72 rounded-full bg-royal-500/20 blur-3xl"></div>
+    <div class="container-x relative z-10">
+      <div class="grid gap-10 pb-12 md:grid-cols-3">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center gap-3">
+            <img src="assets/logo-256.png" alt="Logo Ministère Les Régénérés" class="h-14 w-14 rounded-full ring-2 ring-gold/70" width="56" height="56" loading="lazy" />
+            <span class="leading-tight">
+              <span class="block text-lg font-extrabold text-white">LES RÉGÉNÉRÉS</span>
+              <span class="block text-[11px] font-medium uppercase tracking-[0.16em] text-gold">Nouvelles créatures en domination</span>
+            </span>
+          </div>
+          <p class="mt-5 max-w-xs text-sm leading-relaxed text-white/70">
+            Une communauté de foi à Lomé, dédiée à la Parole, à la prière et à la louange. Vous êtes les bienvenus.
+          </p>
+        </div>
+
+        <!-- Contacts -->
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-[0.18em] text-gold">Contact</h3>
+          <ul class="mt-5 space-y-4 text-sm">
+            <li class="flex items-start gap-3">
+              <svg class="mt-0.5 h-5 w-5 flex-none text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.3a1 1 0 01.95.68l1.1 3.3a1 1 0 01-.5 1.2l-1.4.7a11 11 0 005.6 5.6l.7-1.4a1 1 0 011.2-.5l3.3 1.1a1 1 0 01.68.95V19a2 2 0 01-2 2A16 16 0 013 5z"/></svg>
+              <span>
+                <a href="tel:+22893357515" class="hover:text-gold">+228 93 35 75 15</a><br />
+                <a href="tel:+22898151068" class="hover:text-gold">+228 98 15 10 68</a>
+              </span>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="mt-0.5 h-5 w-5 flex-none text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+              <span>Hédrzanawové mangotigomé,<br />en face de Energy Generation,<br />Lomé, Togo</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Socials -->
+        <div>
+          <h3 class="text-sm font-bold uppercase tracking-[0.18em] text-gold">Suivez-nous</h3>
+          <div class="mt-5 flex gap-3">
+            <a data-link="facebook" href="https://www.facebook.com/ministeleresregeneres" target="_blank" rel="noopener" aria-label="Facebook" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-[#1877F2]">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0022 12z"/></svg>
+            </a>
+            <a data-link="instagram" href="https://www.instagram.com/ministeleresregeneres" target="_blank" rel="noopener" aria-label="Instagram" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#E1306C] hover:to-[#F77737]">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.26.07 1.64.07 4.85s0 3.6-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.26.06-1.64.07-4.85.07s-3.6 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.2 8.8 2.2 12 2.2zm0 3.05A6.75 6.75 0 1018.75 12 6.75 6.75 0 0012 5.25zm0 11.13A4.38 4.38 0 1116.38 12 4.38 4.38 0 0112 16.38zm6.99-11.4a1.58 1.58 0 11-1.58-1.58 1.58 1.58 0 011.58 1.58z"/></svg>
+            </a>
+            <a data-link="youtube" href="https://www.youtube.com/@ministeleresregeneres" target="_blank" rel="noopener" aria-label="YouTube" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-[#FF0000]">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+            </a>
+            <a data-link="tiktok" href="https://www.tiktok.com/@ministeleresregeneres" target="_blank" rel="noopener" aria-label="TikTok" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-black">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M16.5 3c.3 2.1 1.6 3.6 3.7 3.9v2.5c-1.3.1-2.5-.3-3.7-1v6.4c0 3.5-2.4 5.9-5.8 5.9-3 0-5.2-2-5.2-4.9 0-2.8 2.1-4.9 5-4.9.3 0 .6 0 .9.1v2.7c-.3-.1-.6-.2-.9-.2-1.3 0-2.3 1-2.3 2.3 0 1.4 1 2.3 2.3 2.3 1.5 0 2.4-1 2.4-2.6V3h3.6z"/></svg>
+            </a>
+            <a data-link="whatsapp" href="https://wa.me/22893357515" target="_blank" rel="noopener" aria-label="WhatsApp" class="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition-colors hover:bg-[#25D366]">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            </a>
+          </div>
+          <p class="mt-5 text-sm text-white/60">Rejoignez notre communauté et restez informé de tous nos programmes.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center justify-between gap-3 border-t border-white/10 py-6 text-center text-xs text-white/50 sm:flex-row sm:text-left">
+        <p>© <span id="year"></span> Ministère Les Régénérés — Tous droits réservés.</p>
+        <p>Fait avec foi à Lomé, Togo 🇹🇬</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a data-link="whatsapp" href="https://wa.me/22893357515" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp" class="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl shadow-green-600/40 transition-transform hover:scale-110">
+    <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <!-- Scripts — l'ordre est important :
+       config.js (données) → main.js (interactions) → live.js (direct) -->
+  <script src="js/config.js?v=muy1p0k0" defer></script>
+  <script src="js/main.js?v=muy1p0k0" defer></script>
+  <script src="js/live.js?v=muy1p0k0" defer></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+/* ============================================================
+   🎨 Source Tailwind — Ministère Les Régénérés
+   ------------------------------------------------------------
+   Ce fichier est compilé vers css/styles.css :
+       npm run build:css     (production, minifié)
+       npm run watch         (développement, à la volée)
+   ▸ NE PAS modifier css/styles.css directement : il est généré.
+   Contient : base (reset + typo), composants réutilisables
+   (.btn-*, .card, .nav-link, .count-*, .reveal) et utilitaires.
+   ============================================================ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Base : réglages globaux ---------- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-slate-700 bg-white antialiased;
+  }
+  /* Décalage sous le header fixe lors des ancres */
+  section[id] {
+    scroll-margin-top: 84px;
+  }
+  ::selection {
+    @apply bg-gold text-navy;
+  }
+}
+
+/* ---------- Composants réutilisables ---------- */
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-gold/40;
+  }
+  .btn-gold {
+    @apply btn bg-gold text-navy shadow-glow hover:-translate-y-0.5 hover:bg-gold-light;
+  }
+  .btn-outline {
+    @apply btn border-2 border-white/70 text-white hover:bg-white hover:text-navy;
+  }
+  .btn-navy {
+    @apply btn bg-navy text-white hover:-translate-y-0.5 hover:bg-royal-700;
+  }
+  .btn-whatsapp {
+    @apply btn bg-[#25D366] text-white shadow-lg shadow-green-600/25 hover:-translate-y-0.5 hover:brightness-110;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-royal-50 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-royal;
+  }
+
+  .section-heading {
+    @apply mt-5 text-3xl font-extrabold leading-tight text-navy sm:text-4xl md:text-[2.6rem];
+  }
+
+  .card {
+    @apply rounded-3xl border border-slate-100 bg-white p-7 shadow-soft transition-all duration-300;
+  }
+  .card-hover {
+    @apply hover:-translate-y-1.5 hover:border-gold/40;
+  }
+
+  .nav-link {
+    @apply relative text-sm font-semibold text-white/85 transition-colors hover:text-gold;
+  }
+  .nav-link::after {
+    content: "";
+    @apply absolute -bottom-1.5 left-0 h-0.5 w-0 rounded-full bg-gold transition-all duration-300;
+  }
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .count-box {
+    @apply flex flex-col items-center justify-center rounded-2xl border border-white/15 bg-white/10 px-3 py-4 backdrop-blur-md sm:px-5 sm:py-5;
+  }
+  .count-num {
+    @apply text-3xl font-extrabold leading-none text-white tabular-nums sm:text-4xl md:text-5xl;
+  }
+  .count-lbl {
+    @apply mt-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-gold sm:text-xs;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Utilitaires personnalisés ---------- */
+@layer utilities {
+  .text-shadow-hero {
+    text-shadow: 0 4px 30px rgba(5, 29, 66, 0.55);
+  }
+  .bg-grid {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+}
+
+/* ---------- Accessibilité : respect de « animations réduites » ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .animate-floaty,
+  .animate-live-pulse,
+  .animate-bounce-down,
+  .animate-shimmer {
+    animation: none !important;
+  }
+}
